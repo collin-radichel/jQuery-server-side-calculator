@@ -4,7 +4,8 @@
   "description": "[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/collin-radichel/jQuery-server-side-calculator/issues"
   },
-  "homepage": "https://github.com/collin-radichel/jQuery-server-side-calculator#readme"
+  "homepage": "https://github.com/collin-radichel/jQuery-server-side-calculator#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1"
+  }
 }

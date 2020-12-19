@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="vendors/jquery-3.5.1.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <title>jQuery Server-Side Calculator</title>
 </head>
-<body>
+<body class="container">
+    <h1>
+        jQuery Server-Side Calculator
+    </h1><br>
+
+    <input id="num1In" type="number" placeholder="Num1">
+    <div>
+    <button class="btn btn-primary" id="addBtn">+</button>
+    <button class="btn btn-primary" id="subtractBtn">-</button>
+    <button class="btn btn-primary" id="multiplyBtn">*</button>
+    <button class="btn btn-primary" id="divideBtn">/</button>
+    </div>
+    <input id="num2In" type="number" placeholder="Num2">
+    <div>
+    <button class="equalsBtn btn btn-success" id="equalsBtn">=</button>
+    </div>
     
 </body>
 </html>
