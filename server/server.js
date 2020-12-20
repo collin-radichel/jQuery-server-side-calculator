@@ -42,10 +42,19 @@ app.post("/calculation", (req, res) => {
   }
 
   //use the spread operator instead of resultsHistory.push
-  resultHistory = [
-    ...resultHistory,
-    `${result.num1} ${strOperator} ${result.num2} = ${answer}`,
-  ];
+  // resultHistory = [
+  //   ...resultHistory,
+  //   `${result.num1} ${strOperator} ${result.num2} = ${answer}`,
+  // ];
+
+  resultHistory.push( {
+    num1 : result.num1,
+    strOperator : strOperator,
+    num2 : result.num2,
+    answer : answer
+  });
+    
+    // `${result.num1} ${strOperator} ${result.num2} = ${answer}`;
 
   console.log(resultHistory);
 
